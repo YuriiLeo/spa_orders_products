@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import useSocket from '../../src/services/hooks/useSocket';
-import './TopMenu.css';
+import { useEffect, useState } from "react";
+import useSocket from "../../src/services/hooks/useSocket";
+import "./TopMenu.css";
 
 const TopMenu = () => {
   const [dateTime, setDateTime] = useState(new Date().toLocaleString());
