@@ -2,21 +2,16 @@ import NavigationMenu from "./components/NavigationMenu";
 import TopMenu from "./components/TopMenu";
 import "./App.css";
 import { Outlet } from "react-router-dom";
+import { BaseLayout } from "./BaseLayout";
 
-const App = () => {
+export const App = () => {
   return (
-    <>
-      <div className="app">
-        <TopMenu />
-        <div className="hero">
-          <NavigationMenu />
-          <main>
-            <Outlet />
-          </main>
-        </div>
-      </div>
-    </>
+    <BaseLayout
+            header={<TopMenu />}
+            sidebar={<NavigationMenu />}
+        >
+        <Outlet />
+    </BaseLayout>
   );
 };
-
-export default App;
+            

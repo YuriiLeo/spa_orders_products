@@ -1,33 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { RouterProvider } from "react-router-dom";
-import ErrorPage from "./error-page.jsx";
-import { createBrowserRouter } from "react-router-dom";
-import Orders from "./components/Orders.jsx";
-import Products from "./components/Products.jsx";
-import AppEntrypoint from "./AppEntrypoint.jsx";
+import { AppRoutes } from "./AppRoutes.jsx";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <AppEntrypoint />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "/orders",
-        element: <Orders />,
-      },
-      {
-        path: "/products",
-        element: <Products />,
-      },
-    ],
-  },
-]);
+const rootElement = document.getElementById('root');
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+if (!rootElement) {
+  throw new Error('Failed to find the root element');
+}
+
+const root = ReactDOM.createRoot(rootElement);
+
+root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AppRoutes />
   </React.StrictMode>,
 );
