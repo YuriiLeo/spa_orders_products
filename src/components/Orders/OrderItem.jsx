@@ -4,6 +4,7 @@ import menuIcon from "../../assets/icons/menu.svg";
 import { formatDateWithMonthName } from "../../services/utils/dateUtils";
 
 const OrderItem = ({ order, onDetailsClick, onDeleteClick, selected }) => {
+
   const totalProducts = order.products.length;
   const totalUsd = order.products.reduce(
     (sum, product) => sum + product.price.find((p) => p.symbol === "USD").value,
@@ -74,7 +75,7 @@ OrderItem.propTypes = {
   order: PropTypes.object.isRequired,
   onDetailsClick: PropTypes.func.isRequired,
   onDeleteClick: PropTypes.func.isRequired,
-  selected: PropTypes.bool,
+  selected: PropTypes.object,
 };
 
 export default OrderItem;

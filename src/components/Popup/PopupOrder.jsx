@@ -40,7 +40,7 @@ const PopupOrder = ({ message, order, onConfirm, onCancel }) => {
 PopupOrder.propTypes = {
   message: PropTypes.string.isRequired,
   order: PropTypes.shape({
-    id: PropTypes.string,
+    id: PropTypes.number, 
     title: PropTypes.string.isRequired,
   }).isRequired,
   onConfirm: PropTypes.func.isRequired,

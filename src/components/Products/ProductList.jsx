@@ -65,7 +65,7 @@ ProductList.propTypes = {
       id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
       photo: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
-      serialNumber: PropTypes.string.isRequired,
+      serialNumber: PropTypes.number.isRequired,
       specification: PropTypes.string.isRequired,
       guarantee: PropTypes.shape({
         start: PropTypes.string.isRequired,
@@ -78,7 +78,7 @@ ProductList.propTypes = {
           value: PropTypes.number.isRequired,
         }),
       ).isRequired,
-      order: PropTypes.string,
+      order: PropTypes.number,
       date: PropTypes.string.isRequired,
     }),
   ).isRequired,

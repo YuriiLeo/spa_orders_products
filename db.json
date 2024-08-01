@@ -9,7 +9,7 @@
         {
           "id": 1,
           "serialNumber": 1234,
-          "isNew": 1,
+          "isNew": false,
           "photo": "https://cdn.pixabay.com/photo/2015/06/16/19/45/monitor-811664_1280.png",
           "title": "Product 1",
           "type": "Monitors",
@@ -28,7 +28,7 @@
         {
           "id": 2,
           "serialNumber": 1234,
-          "isNew": 1,
+          "isNew": true,
           "photo": "https://cdn.pixabay.com/photo/2015/06/16/19/45/monitor-811664_1280.png",
           "title": "Product 1",
           "type": "Monitors",
@@ -47,7 +47,7 @@
         {
           "id": 3,
           "serialNumber": 1234,
-          "isNew": 1,
+          "isNew": true,
           "photo": "https://cdn.pixabay.com/photo/2015/06/16/19/45/monitor-811664_1280.png",
           "title": "Product 1",
           "type": "Monitors",
@@ -66,7 +66,7 @@
         {
           "id": 4,
           "serialNumber": 1234,
-          "isNew": 1,
+          "isNew": true,
           "photo": "https://cdn.pixabay.com/photo/2015/06/16/19/45/monitor-811664_1280.png",
           "title": "Product 1",
           "type": "Monitors",
@@ -85,7 +85,7 @@
         {
           "id": 5,
           "serialNumber": 1234,
-          "isNew": 1,
+          "isNew": true,
           "photo": "https://cdn.pixabay.com/photo/2015/06/16/19/45/monitor-811664_1280.png",
           "title": "Product 1",
           "type": "Monitors",
@@ -104,7 +104,7 @@
         {
           "id": 6,
           "serialNumber": 1234,
-          "isNew": 1,
+          "isNew": true,
           "photo": "https://cdn.pixabay.com/photo/2015/06/16/19/45/monitor-811664_1280.png",
           "title": "Product 1",
           "type": "Monitors",
@@ -131,7 +131,7 @@
         {
           "id": 1,
           "serialNumber": 1234,
-          "isNew": 1,
+          "isNew": true,
           "photo": "https://cdn.pixabay.com/photo/2015/06/16/19/45/monitor-811664_1280.png",
           "title": "Product 1",
           "type": "Monitors",
@@ -150,7 +150,7 @@
         {
           "id": 2,
           "serialNumber": 1234,
-          "isNew": 1,
+          "isNew": true,
           "photo": "https://cdn.pixabay.com/photo/2015/06/16/19/45/monitor-811664_1280.png",
           "title": "Product 1",
           "type": "Monitors",
@@ -169,7 +169,7 @@
         {
           "id": 3,
           "serialNumber": 1234,
-          "isNew": 1,
+          "isNew": true,
           "photo": "https://cdn.pixabay.com/photo/2015/06/16/19/45/monitor-811664_1280.png",
           "title": "Product 1",
           "type": "Monitors",
@@ -188,7 +188,7 @@
         {
           "id": 4,
           "serialNumber": 1234,
-          "isNew": 1,
+          "isNew": true,
           "photo": "https://cdn.pixabay.com/photo/2015/06/16/19/45/monitor-811664_1280.png",
           "title": "Product 1",
           "type": "Monitors",
@@ -215,7 +215,7 @@
         {
           "id": 1,
           "serialNumber": 1234,
-          "isNew": 1,
+          "isNew": true,
           "photo": "https://cdn.pixabay.com/photo/2015/06/16/19/45/monitor-811664_1280.png",
           "title": "Product 1",
           "type": "Monitors",
@@ -234,7 +234,7 @@
         {
           "id": 2,
           "serialNumber": 1234,
-          "isNew": 1,
+          "isNew": true,
           "photo": "https://cdn.pixabay.com/photo/2015/06/16/19/45/monitor-811664_1280.png",
           "title": "Product 1",
           "type": "Monitors",
@@ -257,7 +257,7 @@
     {
       "id": 1,
       "serialNumber": 1234,
-      "isNew": 1,
+      "isNew": true,
       "photo": "https://cdn.pixabay.com/photo/2015/06/16/19/45/monitor-811664_1280.png",
       "title": "Product 1",
       "type": "Monitors",
@@ -276,7 +276,7 @@
     {
       "id": 2,
       "serialNumber": 1234,
-      "isNew": 1,
+      "isNew": true,
       "photo": "https://cdn.pixabay.com/photo/2014/08/30/15/53/tablet-431647_1280.png",
       "title": "Product 1",
       "type": "Tablet",
@@ -295,7 +295,7 @@
     {
       "id": 3,
       "serialNumber": 1234,
-      "isNew": 1,
+      "isNew": true,
       "photo": "https://cdn.pixabay.com/photo/2015/06/16/19/45/monitor-811664_1280.png",
       "title": "Product 1",
       "type": "Monitors",
@@ -314,7 +314,7 @@
     {
       "id": 4,
       "serialNumber": 1234,
-      "isNew": 1,
+      "isNew": true,
       "photo": "https://cdn.pixabay.com/photo/2015/06/16/19/45/monitor-811664_1280.png",
       "title": "Product 1",
       "type": "Monitors",
@@ -333,7 +333,7 @@
     {
       "id": 5,
       "serialNumber": 1234,
-      "isNew": 1,
+      "isNew": true,
       "photo": "https://cdn.pixabay.com/photo/2014/08/30/15/53/tablet-431647_1280.png",
       "title": "Product 1",
       "type": "Tablet",
@@ -352,7 +352,7 @@
     {
       "id": 6,
       "serialNumber": 1234,
-      "isNew": 1,
+      "isNew": true,
       "photo": "https://cdn.pixabay.com/photo/2015/06/16/19/45/monitor-811664_1280.png",
       "title": "Product 1",
       "type": "Monitors",
