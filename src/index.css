@@ -21,6 +21,9 @@ main ul li a {
   text-decoration: none;
   background-color: transparent;
 }
+a {
+  color: #212020;
+}
 
 ul {
   list-style: none;
@@ -68,4 +71,8 @@ button:hover {
   width: 16px;
   height: 16px;
   color: rgb(20, 20, 20);
+}
+
+.active {
+  color: rgb(53, 53, 235);
 }
