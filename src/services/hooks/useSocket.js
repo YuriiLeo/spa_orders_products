@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import socketIOClient from 'socket.io-client';
+import { useEffect, useState } from "react";
+import socketIOClient from "socket.io-client";
 
 const useSocket = (url) => {
   const [activeSessions, setActiveSessions] = useState(0);
@@ -7,7 +7,7 @@ const useSocket = (url) => {
   useEffect(() => {
     const socket = socketIOClient(url);
 
-    socket.on('activeSessions', (data) => {
+    socket.on("activeSessions", (data) => {
       setActiveSessions(data);
     });
 

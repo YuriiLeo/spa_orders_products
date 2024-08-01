@@ -36,7 +36,9 @@ export const {
 export const fetchProducts = () => async (dispatch) => {
   dispatch(fetchProductsRequest());
   try {
-    const response = await axios.get(`${import.meta.env.VITE_API_URL}/products`);
+    const response = await axios.get(
+      `${import.meta.env.VITE_API_URL}/products`,
+    );
     dispatch(fetchProductsSuccess(response.data));
   } catch (error) {
     dispatch(fetchProductsFailure(error.message));
