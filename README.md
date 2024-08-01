@@ -1,6 +1,6 @@
 # orders_products_dzen
 
-This project is a React application that manages orders and products, utilizing Redux for state management and Vite for the build tool. The application provides functionalities such as viewing orders and deleting orders or products. The project is set up with a JSON server for handling mock API requests and a WebSocket server for real-time updates.
+This project is a React application that manages orders and products, utilizing Redux for state management and Vite for the build tool. The application provides functionalities such as viewing orders, managing products, and real-time updates using WebSockets.
 
 ## Table of Contents
 
@@ -8,11 +8,10 @@ This project is a React application that manages orders and products, utilizing 
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Scripts](#scripts)
-  - [Dependencies](#dependencies)
-  - [Dev Dependencies](#dev-dependencies)
-  - [PropTypes](#proptypes)
+  - [Environment Variables](#environment-variables)
   - [Styling](#styling)
   - [Usage](#usage)
+  - [Testing](#testing)
 
 ## Installation
 
@@ -30,63 +29,23 @@ This project is a React application that manages orders and products, utilizing 
 ## Scripts
 
 - `dev`: Starts the development server using Vite.
-    ```sh
-    npm run dev
-    ```
-
 - `build`: Builds the project for production.
-    ```sh
-    npm run build
-    ```
-
 - `lint`: Runs ESLint to check for linting errors.
-    ```sh
-    npm run lint
-    ```
-
 - `preview`: Previews the built project.
-    ```sh
-    npm run preview
-    ```
-
 - `json-server`: Starts the JSON server to serve mock API data.
-    ```sh
-    npm run json-server
-    ```
-
 - `ws-server`: Starts the WebSocket server.
-    ```sh
-    npm run ws-server
-    ```
+- `format`: Runs lint and prettier to format the codebase.
 
-## Dependencies
+## Environment Variables
 
-- `@reduxjs/toolkit`: "^2.2.6"
-- `axios`: "^1.7.2"
-- `json-server`: "1.0.0-beta.1"
-- `react`: "^18.3.1"
-- `react-dom`: "^18.3.1"
-- `react-redux`: "^9.1.2"
-- `react-router-dom`: "^6.25.1"
-- `redux`: "^5.0.1"
-- `redux-thunk`: "^3.1.0"
-- `socket.io`: "^4.7.5"
-- `socket.io-client`: "^4.7.5"
+Before running the project, ensure you have a `.env` file in the root of the project with the following variables:
 
-## Dev Dependencies
-
-- `@types/react`: "^18.3.3"
-- `@types/react-dom`: "^18.3.0"
-- `@vitejs/plugin-react`: "^4.3.1"
-- `eslint`: "^8.57.0"
-- `eslint-plugin-react`: "^7.34.3"
-- `eslint-plugin-react-hooks`: "^4.6.2"
-- `eslint-plugin-react-refresh`: "^0.4.7"
-- `vite`: "^5.3.4"
+- `VITE_API_URL`: Base URL for the API
+- `VITE_SOCKET_URL`: WebSocket server URL
 
 ## Styling
 
-The styling for this project is done using CSS modules. Each component has its own associated CSS file that handles its styling. For example, the `OrderDetails` component has a corresponding `OrderDetails.css` file.
+The project uses CSS Modules for styling. Each component has a corresponding CSS file, and styles are scoped locally to each component. For example, the `OrderDetails` component has a `OrderDetails.module.css` file.
 
 ## Usage
 
@@ -107,4 +66,9 @@ The styling for this project is done using CSS modules. Each component has its o
 
 4. Open your browser and navigate to `http://localhost:3000` to see the application in action.
 
-This README provides an overview of the project structure and how to get started with development. For more detailed documentation, refer to the source code.
+## Testing
+
+The project is set up to use [testing-library](https://testing-library.com/) and [Jest](https://jestjs.io/) for unit and integration testing. To run tests:
+
+```sh
+npm run test
