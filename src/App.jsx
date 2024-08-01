@@ -6,12 +6,8 @@ import { BaseLayout } from "./BaseLayout";
 
 export const App = () => {
   return (
-    <BaseLayout
-            header={<TopMenu />}
-            sidebar={<NavigationMenu />}
-        >
-        <Outlet />
+    <BaseLayout header={<TopMenu />} sidebar={<NavigationMenu />}>
+      <Outlet />
     </BaseLayout>
   );
 };
-            
