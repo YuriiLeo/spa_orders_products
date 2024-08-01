@@ -42,19 +42,10 @@ export const {
 export const fetchOrders = () => async (dispatch) => {
   dispatch(fetchOrdersRequest());
   try {
-    const response = await axios.get("http://localhost:4000/orders");
+    const response = await axios.get(`${import.meta.env.VITE_API_URL}/orders`);
     dispatch(fetchOrdersSuccess(response.data));
   } catch (error) {
     dispatch(fetchOrdersFailure(error.message));
-  }
-};
-
-export const removeOrder = (orderId) => async (dispatch) => {
-  try {
-    await axios.delete(`http://localhost:4000/orders/${orderId}`);
-    dispatch(deleteOrder(orderId));
-  } catch (error) {
-    console.error("Failed to delete the order:", error);
   }
 };
 
