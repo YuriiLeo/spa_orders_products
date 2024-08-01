@@ -1,14 +1,14 @@
 import PropTypes from "prop-types";
 import "./Popup.css";
 import trashIcon from "../../assets/icons/trash.svg";
+import ButtonClose from "../ButtonClose";
 
-const PopupProduct = ({ message, product, onConfirm, onCancel }) => {
+const PopupProduct = ({ message, product, onConfirm, onClose }) => {
   return (
     <div className="popup-overlay">
       <div className="popup-content">
-        <button className="popup-close" onClick={onCancel}>
-          &times;
-        </button>
+        <ButtonClose onClose={onClose}/>
+
         <div className="popup-meta">
           <p className="popup-message">{message}</p>
           <div className="popup-product">
@@ -25,7 +25,7 @@ const PopupProduct = ({ message, product, onConfirm, onCancel }) => {
           </div>
         </div>
         <div className="popup-buttons">
-          <button className="popup-cancel" onClick={onCancel}>
+          <button className="popup-cancel" onClick={onClose}>
             Cancel
           </button>
           <button className="popup-delete" onClick={onConfirm}>
@@ -48,7 +48,7 @@ PopupProduct.propTypes = {
     serialNumber: PropTypes.number.isRequired,
   }).isRequired,
   onConfirm: PropTypes.func.isRequired,
-  onCancel: PropTypes.func.isRequired,
+  onClose: PropTypes.func.isRequired,
 };
 
 export default PopupProduct;

@@ -73,7 +73,7 @@ const Products = () => {
           message={`Are you sure you want to delete this product ${productToDelete.title}?`}
           product={productToDelete}
           onConfirm={handleConfirmDelete}
-          onCancel={handleCancelDelete}
+          onClose={handleCancelDelete}
         />
       )}
     </div>

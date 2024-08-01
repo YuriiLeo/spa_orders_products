@@ -65,7 +65,7 @@ const Orders = () => {
           order={selectOrder}
           orderDate={selectedOrder}
           onConfirm={() => handleDelete(selectedOrder.id)}
-          onCancel={() => setShowPopup(false)}
+          onClose={() => setShowPopup(false)}
         />
       )}
     </div>

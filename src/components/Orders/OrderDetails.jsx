@@ -1,8 +1,8 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import closeIcon from "../../assets/icons/close.svg";
 import trashIcon from "../../assets/icons/trash.svg";
 import PopupProduct from "../Popup/PopupProduct";
+import ButtonClose from "../ButtonClose";
 
 const OrderDetails = ({ order, onClose }) => {
   const [productToDelete, setProductToDelete] = useState(null);
@@ -31,11 +31,7 @@ const OrderDetails = ({ order, onClose }) => {
           <button className="button-add">+</button>
           <span> Add product</span>
         </div>
-        <button className="order-details-close" onClick={onClose}>
-          <svg className="close-icon">
-            <use href={`${closeIcon}#close`} />
-          </svg>
-        </button>
+        <ButtonClose onClose={onClose} />
       </div>
       <ul className="products-list">
         {order.products.map((product) => (
@@ -67,7 +63,7 @@ const OrderDetails = ({ order, onClose }) => {
           message={`Are you sure you want to delete this product ${productToDelete.title}?`}
           product={productToDelete}
           onConfirm={handleConfirmDelete}
-          onCancel={handleCancelDelete}
+          onClose={handleCancelDelete}
         />
       )}
     </div>

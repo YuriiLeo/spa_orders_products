@@ -1,15 +1,14 @@
 import PropTypes from "prop-types";
 import trashIcon from "../../assets/icons/trash.svg";
 import "./Popup.css";
+import ButtonClose from "../ButtonClose";
 
-const PopupOrder = ({ message, order, onConfirm, onCancel }) => {
+const PopupOrder = ({ message, order, onConfirm, onClose }) => {
   if (!order) return null;
   return (
     <div className="popup-overlay">
       <div className="popup-content">
-        <button className="popup-close" onClick={onCancel}>
-          &times;
-        </button>
+        <ButtonClose onClose={onClose}/>
         <div className="popup-meta">
           <p className="popup-message">{message}</p>
           <span className="product-status"></span>
@@ -22,7 +21,7 @@ const PopupOrder = ({ message, order, onConfirm, onCancel }) => {
           </div>
         </div>
         <div className="popup-buttons">
-          <button className="popup-cancel" onClick={onCancel}>
+          <button className="popup-cancel" onClick={onClose}>
             Cancel
           </button>
           <button className="popup-delete" onClick={onConfirm}>
@@ -44,7 +43,7 @@ PopupOrder.propTypes = {
     title: PropTypes.string.isRequired,
   }).isRequired,
   onConfirm: PropTypes.func.isRequired,
-  onCancel: PropTypes.func.isRequired,
+  onClose: PropTypes.func.isRequired,
 };
 
 export default PopupOrder;
