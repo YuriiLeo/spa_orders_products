@@ -46,6 +46,9 @@ This project is a React application that manages orders and products, utilizing 
  ```
 VITE_API_URL=your_api_url_here
     VITE_SOCKET_URL=your_socket_url_here
+ 
+ example 
+ VITE_API_URL=http://localhost:4000
  ```
 
 ## Styling
