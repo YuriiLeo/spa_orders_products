@@ -38,10 +38,15 @@ This project is a React application that manages orders and products, utilizing 
 
 ## Environment Variables
 
-Before running the project, ensure you have a `.env` file in the root of the project with the following variables:
+- In the root of the project, find the `.env.sample` file.
+- Rename it to `.env`:
 
-- `VITE_API_URL`: Base URL for the API
-- `VITE_SOCKET_URL`: WebSocket server URL
+- Open the `.env` file and insert your URLs for the variables:
+
+ ```
+VITE_API_URL=your_api_url_here
+    VITE_SOCKET_URL=your_socket_url_here
+ ```
 
 ## Styling
 
