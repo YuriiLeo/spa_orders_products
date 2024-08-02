@@ -1,12 +1,12 @@
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
-import { deleteOrder, fetchOrders } from "../../redux/reducers/ordersReducer";
+import { deleteOrder, fetchOrders } from "../redux/reducers/ordersReducer";
 import "./Orders.css";
-import OrderDetails from "./OrderDetails";
+import OrderDetails from "../components/Orders/OrderDetails";
 import { useState } from "react";
-import PopupOrder from "../Popup/PopupOrder";
-import OrderList from "./OrderList";
+import PopupOrder from "../components/Popup/PopupOrder";
+import OrderList from "../components/Orders/OrderList";
 
 const Orders = () => {
   const dispatch = useDispatch();

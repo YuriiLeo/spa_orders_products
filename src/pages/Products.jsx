@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchProducts } from "../../redux/reducers/productsReducer";
+import { fetchProducts } from "../redux/reducers/productsReducer";
 import "./Products.css";
-import PopupProduct from "../Popup/PopupProduct";
-import ProductList from "./ProductList";
+import PopupProduct from "../components/Popup/PopupProduct";
+import ProductList from "../components/Products/ProductList";
 
 const Products = () => {
   const dispatch = useDispatch();
